@@ -1,0 +1,59 @@
+.home-container{
+color: black;
+ width: 100%;
+ height: 100vh;
+ position: absolute;
+ left: 0;
+ top: 100px;
+
+ display: flex;
+}
+.home-container .space-witi{
+    width: calc(50% - 60px);
+    height: 100%;
+    padding: 80px 75px;
+    text-align: start;
+}
+.space-witi h4,h1{
+    font-weight: bold;
+    font-size: 44px;
+    margin-top: 0px;
+}
+.space-witi h4{
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+.space-witi p{
+    font-size: 20px;
+}
+.fb-icon{
+    color: blueviolet;
+    font-size: 40px;
+    margin-right: 25px;
+    border-radius: 50%;
+}
+.space-imag{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-img {
+    background-color: blueviolet;
+    height: 300px;
+    width: 340px;
+    margin-top: -220px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 26%;
+}
+.back-img img{
+    height: 300px;
+    width: 260px;
+    padding-left: 50px;
+
+
+}

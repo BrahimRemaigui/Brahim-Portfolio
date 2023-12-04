@@ -6,6 +6,7 @@ import { MdDarkMode } from "react-icons/md";
 export default function Navbar()
 {
     return (
+        <>
         <div className="nav-bar">
             <img className='logo' src={img1}></img> 
             <div className='muno'>
@@ -18,11 +19,14 @@ export default function Navbar()
                  </ul>
             </div>
             <MdDarkMode className='darc-icon'/>
-            <main>
-        <Outlet />
-      </main>
-  
-        </div>
+
+          </div>
+
+          <main>
+            <Outlet></Outlet>
+          </main>
+          </>
+
 
     )
         

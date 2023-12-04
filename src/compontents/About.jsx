@@ -1,8 +1,9 @@
 import './Home.css'
 export default function About(){
     return(
-        <div className="home-container">
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. At et illum dolor reiciendis nihil. Fugiat vero incidunt exercitationem autem in natus, tempore accusantium cupiditate blanditiis mollitia soluta ducimus placeat nostrum?
+        <div className="about-con">
+          <h4> HI I'M FREELENCER</h4> 
+          <h2>Frent-end Devloper</h2>
         </div>
     )
 

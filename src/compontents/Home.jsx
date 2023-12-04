@@ -10,8 +10,7 @@ export default function Home() {
             <div className="space-witi">
                 <h4>Hi I'am</h4>
                 <h1><span style={{color:'blueviolet'}}>Brahim </span> Remaigui </h1>
-                <p>I'am frent-end web devloper i worked at react js Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus at suscipit fugit voluptatem soluta vitae dignissimos saepe illum doloribus, maiores vel non. Eum cum eligendi, aperiam nobis delectus id tenetur.</p>
+                <p> I am a passionate front-end developer specializing in the React framework, with a keen eye for crafting engaging and user-friendly web experiences. Proficient in HTML and CSS, I leverage these technologies to bring designs to life, ensuring seamless and visually appealing interfaces. My commitment to writing clean, efficient code and staying abreast of the latest industry trends allows me to create dynamic and responsive applications that prioritize user experience. With a love for problem-solving and a dedication to staying at the forefront of web development, I strive to contribute to innovative and impactful projects.</p>
                 <div className="icons">
                 <FaFacebook className='fb-icon'/>
                 <GrLinkedin className='fb-icon'/>

@@ -149,6 +149,7 @@ Link{
 }
 .our-skills .container {
   display: flex;
+  margin-top: -160px;
   align-items: center;
 }
 @media (max-width: 991px) {
@@ -173,7 +174,7 @@ Link{
 }
 .our-skills .skill .the-progress {
   height: 30px;
-  background-color: #eee;
+  background-color: white;
   position: relative;
 }
 .our-skills .skill .the-progress span {
@@ -181,7 +182,8 @@ Link{
   left: 0;
   top: 0;
   height: 100%;
-  background-color: var(--main-color);
+  background-color: blueviolet;
+  
 }
 /* End Skills */
 

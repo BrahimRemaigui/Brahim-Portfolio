@@ -4,6 +4,7 @@
     box-shadow: 0 2px 15px rgba(30, 29, 29, 0.1);
     display: flex;
     justify-content: space-around;
+    z-index: 10;
 }
 
 .logo {
@@ -19,11 +20,12 @@
 }
 .nav-bar li {
     padding: 10px 20px ;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
+    color: blueviolet;
 }
 .nav-bar li:hover {
-    color: blueviolet;
+    color: rgb(73, 14, 129);
 }
 .darc-icon{
     color: blueviolet;
@@ -31,3 +33,6 @@
     margin: 20px;
 }
 
+.darc-icon:hover {
+    color: rgb(73, 14, 129);
+}

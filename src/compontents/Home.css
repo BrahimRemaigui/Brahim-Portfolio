@@ -1,12 +1,30 @@
 .home-container{
-color: black;
+ color: black;
  width: 100%;
- height: 100vh;
-
-
+ height: 70vh;
+ background: #ececec;
  display: flex;
+ position: relative;
 }
-@media(max-width:558px)
+@media(max-width:1400px)
+{
+    .home-container{
+        height: fit-content;
+    }
+}
+  .home-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top:160px;
+    width: 100%;
+    height: 100%;
+    background-color: #ececec;
+    z-index: -1;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+  }
+@media(max-width:997px)
 {
     .home-container{
         flex-direction: column;
@@ -17,11 +35,13 @@ color: black;
     height: fit-content;
     padding: 50px 65px;
     text-align: start;
+    margin-top: -10px;
 }
 .space-witi h4,h1{
     font-weight: bold;
     font-size: 44px;
     margin-top: 0px;
+    margin-bottom: 10px;
 }
 .space-witi h4{
     margin-bottom: 0px;
@@ -36,6 +56,9 @@ color: black;
     margin-right: 25px;
     border-radius: 50%;
 }
+.fb-icon:hover {
+    color: rgb(73, 14, 129);
+}
 .space-imag{
     width: 40%;
     height: 100%;
@@ -43,24 +66,37 @@ color: black;
     justify-content: center;
     align-items: center;
 }
+.icons
+{
+    margin-top: 15px;
+}
 .back-img {
     background-color: blueviolet;
     height: 300px;
     width: 340px;
-    margin-top: -130px;
+    margin-top: -150px;
     margin-left: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 26%;
+    animation: App-logo-spin infinite 5s linear;
+}
+@media(max-width:556px)
+{
+.back-img{
+    display: none;
+}
+.home-container .space-witi{
+ width: 100%;   
+}
 }
 .back-img img{
     height: 300px;
     width: 260px;
     padding-left: 50px;
-
-
 }
+
 
 .about-con{
     background-image: url('../imgs/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg');
@@ -77,3 +113,42 @@ color: black;
     z-index: 5;
     color: black;
 }
+.btns{
+    margin: 10px 15px;
+}
+.dis-btn{
+    padding: 10px 10px;
+    width: fit-content;
+    height: 42px;
+    background-color: blueviolet;
+    font-size: 20px;
+    margin-left: 8px;
+    padding-left:15px ;
+    padding-right:15px ;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+}
+.dis-btn:hover{
+    background-color:rgb(73, 14, 129); ;
+}
+
+.grid-card{
+    margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/*animations*/
+
+  
+  @keyframes App-logo-spin {
+    from {
+     margin-top: 50px;
+    }
+    to {
+        margin-top: 150px;
+    }
+  }

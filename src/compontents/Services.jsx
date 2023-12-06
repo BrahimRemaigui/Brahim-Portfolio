@@ -20,11 +20,11 @@ export default function Services() {
           <img src={img1} className='bold-img' alt="" />
           <div className="box-carf">
             <h3>Create web sites</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cumque.</p>
+            <p>Transform your ideas into a stunning online presence! we specialize in creating custom websites that captivate and engage.</p>
             <button className={`${class1} ${class2}`} >Reauest Services</button>
           </div>
         </div>
-        <div className="box">
+        <div className="box" style={{marginTop:'-25px'}}>
           <img src={img2} className='bold-img' alt="" />
           <div className="box-carf">
             <h3>Create & Design Logo</h3>
@@ -41,7 +41,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="box">
+        <div className="box" style={{marginTop:'-25px'}}>
           <img src={img4} className='bold-img' alt="" />
           <div className="box-carf">
             <h3>Create Desktop Applications</h3>

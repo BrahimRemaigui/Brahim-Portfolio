@@ -25,7 +25,7 @@ export default function Navbar()
                     <Link style={{textDecoration:'none'}} to="/"><li className='muno-item'><a>Home</a> </li></Link>
                     <Link style={{textDecoration:'none'}} to="services"><li className='muno-item'> Services</li></Link>
                     <Link style={{textDecoration:'none'}} to="Skills"><li className='muno-item'> Skils</li></Link>
-                    <Link style={{textDecoration:'none'}} to="Contact"><li className='muno-item'> Projects</li></Link>
+                    <Link style={{textDecoration:'none'}} to="project"><li className='muno-item'> Projects</li></Link>
 
                     <Link style={{textDecoration:'none'}} to="Portfolio"><li className='muno-item'> Portfolio</li></Link>
                     <Link style={{textDecoration:'none'}} to="Contact"><li className='muno-item'> Contact</li></Link>

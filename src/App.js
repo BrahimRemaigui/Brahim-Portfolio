@@ -14,7 +14,7 @@ import Skills from './compontents/Skills'
 import Portfolio from './compontents/Portfolio'
 import Contact from './compontents/Contact'
 import Foter from './Foter';
-
+import Project from './compontents/Project'
 
 function App() {
   const router = createBrowserRouter(
@@ -24,6 +24,7 @@ function App() {
         <Route path="services" element={<Services/>} />
         <Route path="skills" element={<Skills />} />
         <Route path="portfolio" element={<Portfolio />} />
+        <Route path="project" element={<Project />} />
         <Route path="contact" element={<Contact />} />
      { /*  <Route path="careers" element={<CareersLayout />}>
           <Route 

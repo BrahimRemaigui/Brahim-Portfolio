@@ -1,5 +1,6 @@
 .footer-con{
-    width: calc(100%-120px);
+    width: 94%;
+    /*  width: calc(100%-120px);*/
     height: fit-content;
     margin-top: 40px;
     background: black;

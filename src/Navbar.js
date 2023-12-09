@@ -16,7 +16,7 @@ export default function Navbar()
     setIsLiked(false)
   }
     return (
-        <>
+      <div className='page-conainter'>
         <div className="nav-bar">
             <img className='logo' src={img1}></img> 
             <div className='muno'>
@@ -36,11 +36,12 @@ export default function Navbar()
             <FiAlignJustify className={`${'hid-media'}`} onClick={showMe}/>
             
           </div>
-
+          
+          
           <main>
             <Outlet></Outlet>
           </main>
-          </>
+      </div>
 
 
     )

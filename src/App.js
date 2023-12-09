@@ -51,7 +51,7 @@ function App() {
     <div className="App">
     
     <RouterProvider router={router} />
-    
+    <div><Foter></Foter></div>
    
 
       </div>

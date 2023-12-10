@@ -1,6 +1,6 @@
 .footer-con{
-    width: 94%;
-    /*  width: calc(100%-120px);*/
+   /* width: 94%;
+    /*  width: calc(100%-120px);
     height: fit-content;
     margin-top: 40px;
     background: black;
@@ -12,8 +12,17 @@
     gap: 50px;
     flex-wrap: wrap;
     padding: 70px 50px;
+    */
 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+    background: black;
+    padding: 70px 50px;
+    color: white;
 }
+
+
 
 .diff-self{
     width: 300px;
@@ -75,4 +84,11 @@
     width: 100px;
     height: 100px;
     margin: 2px;
+}
+
+@media(min-width:1400px){
+    .footer-con{
+        gap: 80px;
+
+    }
 }

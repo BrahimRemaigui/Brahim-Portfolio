@@ -1,0 +1,68 @@
+.Contact-con{
+margin: 30px auto;
+width: 70%;
+padding: 50px;
+height: 60vh;
+box-shadow: 0 2px 15px rgba(30, 29, 29, 0.1);
+
+display: flex;
+}
+.space-witing
+{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: start;
+    padding: 0px 40px;
+    flex-direction: column;
+}
+.space-witing h1{
+    font-weight: 600;
+    font-size: 50px;
+    
+}
+.space-witing .name{
+    width: 370px;
+    padding: 5px;
+    font-size: 22px;
+    outline: none;
+    background: #E4E4EA;
+    height: 35px;
+    
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+}
+.space-witing .sent-mess{
+    width: 370px;  
+    padding: 10px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background: blueviolet;
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.space-witing .textarea{
+    width: 370px;
+    height: 120px;
+    margin-top: 20px;
+    background: #ECE8EE ;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    border: none;
+}
+
+.Contact-con .image-cover{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: start;
+}
+.image-cover img{
+    width: 500px;
+    height: 70vh;
+}

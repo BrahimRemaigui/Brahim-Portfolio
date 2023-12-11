@@ -3,11 +3,13 @@ import { FaFacebook } from "react-icons/fa";
 import { GrLinkedin } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom'
 import {Link} from 'react-router-dom'
 import img from '../imgs/brahim-photo-removebg-preview.png'
 export default function Home() {
+    const navigate = useNavigate();
     const handleDownload = () => {
-
+        
         
         // Replace 'your_file_url' with the actual URL of the file to be downloaded
         const fileUrl = '/cv.doxc';
@@ -28,8 +30,8 @@ export default function Home() {
                 <h1 style={{fontSize:'37px'}}>I'am <span style={{color:'blueviolet'}}>Freelencer Frent-end </span> Devloper </h1>
                 <div className="icons">
                 <FaFacebook className='fb-icon'/>
-                <GrLinkedin className='fb-icon'/>
-                <FaGithub className='fb-icon'/>
+                <a href="www.facebook.com"><GrLinkedin className='fb-icon'/></a>
+                <FaGithub className='fb-icon'onClick={()=>{ navigate("https://github.com/BrahimRemaigui") }}/> 
                 <FaInstagramSquare className='fb-icon'/>
                 </div>
                 <p> I am a passionate front-end developer specializing in the React framework, with a keen eye for crafting engaging and user-friendly web experiences. Proficient in HTML and CSS, I leverage these technologies to bring designs to life, ensuring seamless and visually appealing interfaces. My commitment to writing clean, efficient code and staying abreast of the latest industry trends allows me to create dynamic and responsive applications that prioritize user experience. With a love for problem-solving and a dedication to staying at the forefront of web development, I strive to contribute to innovative and impactful projects.</p>

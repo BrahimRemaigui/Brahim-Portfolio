@@ -22,14 +22,12 @@ export default function Navbar()
             <div className='muno'>
                 <ul className={`nav ${isLiked ? "menu-responsive" :"muno_normale" }`}onMouseLeave={changefalse} >
                 
-                    <Link style={{textDecoration:'none'}} to="/"><li className='muno-item'><a>Home</a> </li></Link>
-                    <Link style={{textDecoration:'none'}} to="services"><li className='muno-item'> Services</li></Link>
-                    <Link style={{textDecoration:'none'}} to="Skills"><li className='muno-item'> Skils</li></Link>
-                    <Link style={{textDecoration:'none'}} to="project"><li className='muno-item'> Projects</li></Link>
-
-                    <Link style={{textDecoration:'none'}} to="Portfolio"><li className='muno-item'> Portfolio</li></Link>
-                    <Link style={{textDecoration:'none'}} to="Contact"><li className='muno-item'> Contact</li></Link>
-                    <MdDarkMode className='darc-icon'/>
+                    <NavLink activeClassName="active-class" style={{textDecoration:'none'}} to="/"><li className='muno-item'><a>Home</a> </li></NavLink>
+                    <NavLink style={{textDecoration:'none'}} to="about" activeClassName="active-class"><li className='muno-item'><a>About</a> </li></NavLink>
+                    <Link style={{textDecoration:'none'}} to="services"><li className='munoitem'> Services</li></Link>
+                    <Link style={{textDecoration:'none'}} to="Skills"><li className='munoitem'> Skils</li></Link>
+                    <Link style={{textDecoration:'none'}} to="project"><li className='munoitem'> Projects</li></Link>
+                    <NavLink style={{textDecoration:'none'}} to="Contact" className='munoitem' activeClassName="active-class"><li > Contact</li></NavLink>
                  </ul>
             </div>
             

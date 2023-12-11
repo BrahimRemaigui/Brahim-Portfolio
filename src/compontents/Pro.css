@@ -1,7 +1,7 @@
 .services-container{
     width: 90%;
     height: fit-content;
-    padding: 50px 65px;
+    padding: 50px 50px;
     text-align: start;
    }
 @media(max-width:776px)
@@ -62,6 +62,6 @@
         margin: 50px auto;
     
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         gap: 30px;
     }

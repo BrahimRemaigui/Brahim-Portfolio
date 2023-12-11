@@ -29,7 +29,7 @@ export default function Foter() {
       <div className="import-link">
         <span className='spann'>
           <GrFormNextLink className='link-icon' />
-          <p>About Brahim</p>
+          <p>About </p>
         </span>
         <span className='spann'>
           <GrFormNextLink className='link-icon' />
@@ -41,11 +41,11 @@ export default function Foter() {
         </span>
         <span className='spann'>
           <GrFormNextLink className='link-icon' />
-          <p>Skills of Brahim</p>
+          <p>Skills  </p>
         </span>
         <span className='spann'>
           <GrFormNextLink className='link-icon' />
-          <p>Contact Brahim</p>
+          <p>Contact </p>
         </span>
       </div>
       <div className="job-info">

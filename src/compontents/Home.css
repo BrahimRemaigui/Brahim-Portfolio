@@ -16,7 +16,7 @@
 .home-container .space-witi{
     width: calc(60% - 60px);
     height: fit-content;
-    padding: 50px 65px;
+    padding: 50px 50px;
     text-align: start;
     margin-top: -10px;
 }
@@ -92,15 +92,7 @@
 
 
 .about-con{
-    background-image: url('../imgs/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg');
-    background-size: cover;
-    width: 100%;
-    height: 600px;
-    opacity: 0.6;
-    display: flex;
-    color: black;
-    justify-content: center;
-    align-items: center;
+
 }
 .about-con .witing{
     z-index: 5;

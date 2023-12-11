@@ -4,6 +4,8 @@ import img1 from '../imgs/build-web.png'
 import img2 from '../imgs/ricardo-viana--tYsPFKMm7g-unsplash.jpg'
 import img3 from '../imgs/frent-end.jpg'
 import img4 from '../imgs/descktop-app.jpg'
+import { GrFormNextLink } from "react-icons/gr";
+
 import img5 from '../imgs/db.jpg'
 export default function Services() {
   const class1 = 'dis-btn';
@@ -21,7 +23,7 @@ export default function Services() {
           <div className="box-carf">
             <h3>Create web sites</h3>
             <p>Transform your ideas into a stunning online presence! we specialize in creating custom websites that captivate and engage.</p>
-            <button className={`${class1} ${class2}`} >Reauest Services</button>
+            <div className='request-service'>Request Sercices <GrFormNextLink className='RequestIcon'/> </div>
           </div>
         </div>
         <div className="box" style={{marginTop:'-25px'}}>
@@ -29,7 +31,7 @@ export default function Services() {
           <div className="box-carf">
             <h3>Create & Design Logo</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cumque.</p>
-            <button className={`${class1} ${class2}`} >Reauest Services</button>
+            <div className='request-service'>Request Sercices <GrFormNextLink className='RequestIcon'/> </div>
           </div>
         </div>
         <div className="box">
@@ -37,7 +39,7 @@ export default function Services() {
           <div className="box-carf">
             <h3>Participation in Frent-end Projects</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cumque.</p>
-            <button className={`${class1} ${class2}`} >Reauest Services</button>
+            <div className='request-service'>Request Sercices <GrFormNextLink className='RequestIcon'/> </div>
           </div>
         </div>
 
@@ -46,7 +48,7 @@ export default function Services() {
           <div className="box-carf">
             <h3>Create Desktop Applications</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cumque.</p>
-            <button className={`${class1} ${class2}`} >Reauest Services</button>
+            <div className='request-service'>Request Sercices <GrFormNextLink className='RequestIcon'/> </div>
           </div>
         </div>
         <div className="box">
@@ -54,7 +56,7 @@ export default function Services() {
           <div className="box-carf">
             <h3>Create & Manager Databases</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cumque.</p>
-            <button className={`${class1} ${class2}`} >Reauest Services</button>
+            <div className='request-service'>Request Sercices <GrFormNextLink className='RequestIcon'/> </div>
           </div>
         </div>
 

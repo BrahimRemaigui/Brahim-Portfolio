@@ -26,7 +26,7 @@ export default function Services() {
             <div className='request-service'>Request Sercices <GrFormNextLink className='RequestIcon'/> </div>
           </div>
         </div>
-        <div className="box" style={{marginTop:'-25px'}}>
+        <div className="box" >
           <img src={img2} className='bold-img' alt="" />
           <div className="box-carf">
             <h3>Create & Design Logo</h3>
@@ -43,7 +43,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="box" style={{marginTop:'-25px'}}>
+        <div className="box">
           <img src={img4} className='bold-img' alt="" />
           <div className="box-carf">
             <h3>Create Desktop Applications</h3>

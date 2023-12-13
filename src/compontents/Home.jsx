@@ -4,10 +4,17 @@ import { GrLinkedin } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom'
+import About from './About'
 import {Link} from 'react-router-dom'
 import img from '../imgs/brahim-photo-removebg-preview.png'
+import { useState } from 'react';
 export default function Home() {
     const navigate = useNavigate();
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleVisibility = () => {
+      setIsVisible(!isVisible);
+    };
     const handleDownload = () => {
         
         
@@ -23,6 +30,7 @@ export default function Home() {
     
 
     return (
+        <div>
         <div className="home-container">
             <div className="space-witi">
                 <h4>Hi I'am</h4>
@@ -34,7 +42,6 @@ export default function Home() {
                 <FaGithub className='fb-icon'onClick={()=>{ navigate("https://github.com/BrahimRemaigui") }}/> 
                 <FaInstagramSquare className='fb-icon'/>
                 </div>
-                <p> I am a passionate front-end developer specializing in the React framework, with a keen eye for crafting engaging and user-friendly web experiences. Proficient in HTML and CSS, I leverage these technologies to bring designs to life, ensuring seamless and visually appealing interfaces. My commitment to writing clean, efficient code and staying abreast of the latest industry trends allows me to create dynamic and responsive applications that prioritize user experience. With a love for problem-solving and a dedication to staying at the forefront of web development, I strive to contribute to innovative and impactful projects.</p>
                 <div className="btns">
                     <button className='dis-btn' onClick={handleDownload}>Download CV</button>
                     <Link style={{textDecoration:'none'}} to="Contact"><button className='dis-btn'>Contact Us</button></Link>
@@ -46,7 +53,18 @@ export default function Home() {
                     <img src={img} alt="" />
                 </div>
             </div>
+            
         </div>
+        <div className='AboutBrahim'>
+            <button onClick={toggleVisibility}>About Brahim</button>
+            
+        </div>
+       
+        <div> {isVisible&&  <About></About> }   </div>
+       
+      
+   
+     </div>
     )
 
 }

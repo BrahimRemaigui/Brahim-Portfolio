@@ -5,13 +5,12 @@ import img2 from '../imgs/ricardo-viana--tYsPFKMm7g-unsplash.jpg'
 import img3 from '../imgs/frent-end.jpg'
 import img4 from '../imgs/descktop-app.jpg'
 import { GrFormNextLink } from "react-icons/gr";
-
 import img5 from '../imgs/db.jpg'
 export default function Services() {
   const class1 = 'dis-btn';
   const class2 = 'place';
   return (
-    <div className='servises-con'>
+    <div className='servises-con' id='services'>
       <div className="space-witi">
         <h1><span style={{ color: 'blueviolet' }}>Services </span> We Provide </h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci pariatur aliquid exercitationem debitis, necessitatibus recusandae eveniet dolorum sit quasi corrupti. Tenetur ab, rerum atque eius minus non inventore nesciunt.</p>

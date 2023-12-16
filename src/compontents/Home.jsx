@@ -5,9 +5,17 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom'
 import About from './About'
+import Services from './Services'
+import Skils from './Skills'
+import Project from './Project'
+import Contact from './Contact'
 import {Link} from 'react-router-dom'
 import img from '../imgs/brahim-photo-removebg-preview.png'
 import { useState } from 'react';
+import { FaAngleDoubleDown } from "react-icons/fa";
+import useScroll from '../useScroll'
+
+
 export default function Home() {
     const navigate = useNavigate();
     const [isVisible, setIsVisible] = useState(false);
@@ -27,7 +35,7 @@ export default function Home() {
         link.click();
         document.body.removeChild(link);
       };
-    
+      const scrollPosition = useScroll();
 
     return (
         <div>
@@ -37,7 +45,7 @@ export default function Home() {
                 <h1><span style={{color:'blueviolet'}}>Brahim </span> Remaigui </h1>
                 <h1 style={{fontSize:'37px'}}>I'am <span style={{color:'blueviolet'}}>Freelencer Frent-end </span> Devloper </h1>
                 <div className="icons">
-                <FaFacebook className='fb-icon'/>
+               <a href="www.facebook.com"> <FaFacebook className='fb-icon'/></a>
                 <a href="www.facebook.com"><GrLinkedin className='fb-icon'/></a>
                 <FaGithub className='fb-icon'onClick={()=>{ navigate("https://github.com/BrahimRemaigui") }}/> 
                 <FaInstagramSquare className='fb-icon'/>
@@ -55,12 +63,13 @@ export default function Home() {
             </div>
             
         </div>
-        <div className='AboutBrahim'>
-            <button onClick={toggleVisibility}>About Brahim</button>
-            
-        </div>
-       
-        <div> {isVisible&&  <About></About> }   </div>
+        <a href="#about"><FaAngleDoubleDown  className='Double-Down'/> </a>
+        <div id='about'> {  <About></About> }   </div>
+        <div> {  <Services></Services> }   </div>
+        <div> {  <Skils></Skils> }   </div>
+        <div> {  <Project></Project> }   </div>
+        <div> {  <Contact></Contact> }   </div>
+
        
       
    

@@ -22,8 +22,8 @@ export default function Navbar()
             <div className='muno'>
                 <ul className={`nav ${isLiked ? "menu-responsive" :"muno_normale" }`}onMouseLeave={changefalse} >
                 
-                    <Link  style={{textDecoration:'none'}} to="/"><li className='munoitem'><a>Home</a> </li></Link>
-                    <Link style={{textDecoration:'none'}} to="services"><li className='munoitem'> Services</li></Link>
+                    <Link  style={{textDecoration:'none'}} to="/"><li className='munoitem'>Home </li></Link>
+                    <Link style={{textDecoration:'none'}} to="services"><li className='munoitem'> Services </li></Link>
                     <Link style={{textDecoration:'none'}} to="Skills"><li className='munoitem'> Skils</li></Link>
                     <Link style={{textDecoration:'none'}} to="project"><li className='munoitem'> Projects</li></Link>
                     <NavLink style={{textDecoration:'none'}} to="Contact" className='munoitem' activeClassName="active-class"><li > Contact</li></NavLink>

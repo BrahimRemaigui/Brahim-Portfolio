@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /*font-family: 'Rubik', sans-serif;*/
 }
 
 code {
@@ -66,4 +67,8 @@ Link{
   width: 90%;
   height: fit-content;
   margin: 100px 50px ;
+}
+p{
+  
+  font-size: 22px;
 }

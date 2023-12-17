@@ -43,7 +43,7 @@ export default function Home() {
             <div className="space-witi">
                 <h4>Hi I'am</h4>
                 <h1><span style={{color:'blueviolet'}}>Brahim </span> Remaigui </h1>
-                <h1 style={{fontSize:'37px'}}>I'am <span style={{color:'blueviolet'}}>Freelencer Frent-end </span> Devloper </h1>
+                <h1 style={{fontSize:'37px'}}>I'am <span style={{color:'blueviolet'}}>Freelancer Front-end </span> Developer </h1>
                 <div className="icons">
                <a href="www.facebook.com"> <FaFacebook className='fb-icon'/></a>
                 <a href="www.facebook.com"><GrLinkedin className='fb-icon'/></a>
@@ -65,9 +65,13 @@ export default function Home() {
         </div>
         <a href="#about"><FaAngleDoubleDown  className='Double-Down'/> </a>
         <div id='about'> {  <About></About> }   </div>
+        <div className="separeteur"></div>
         <div> {  <Services></Services> }   </div>
+        <div className="separeteur"></div>
         <div> {  <Skils></Skils> }   </div>
+        <div className="separeteur"></div>
         <div> {  <Project></Project> }   </div>
+        <div className="separeteur"></div>
         <div> {  <Contact></Contact> }   </div>
 
        

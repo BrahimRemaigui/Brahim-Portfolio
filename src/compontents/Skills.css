@@ -4,16 +4,7 @@
     height: fit-content; 
     position: relative;
    }
-   @media(max-width:556px)
-   {
-       .skills-container{
-         width: 96%;
-        padding: 0px;
-       }
-       .skills-container .space-witi{
-       }
-   }
-
+   
      
    @media(max-width:997px)
    {
@@ -33,23 +24,39 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin: 20px 50px;
+        padding: 20px 50px;
     }
 
     .servises-con .space-witi{
     text-align: start;
         
     }
+    @media(max-width:556px)
+   {
+       .skills-container{
+         width: 96%;
+        padding: 0px;
+       }
+       .skills-container .space-witi{
+        padding: 20px;
+       }
+       .servises-con .space-witi{
+        width: 80%;
+        padding: 20px;
+        
+    }
+   }
+
    .grid-card .box{
     width: 98%;
     max-width: 320px;
     height: 400px;
+    margin: auto;
     border-radius: 5px;
     display: flex;
     flex-direction:column ;
     box-shadow: 0 2px 15px rgba(30, 29, 29, 0.1);
-    border-right:1px solid blueviolet ;
-    border-bottom:1px solid blueviolet ;
+
     position: relative;
     transition: 0.5s;
 }
@@ -88,7 +95,7 @@
     height: fit-content;
     margin: 80px 5%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 40px;
     
 }

@@ -4,6 +4,7 @@ import img1 from '../imgs/Screenshot 2023-12-06 225730.png'
 import img2 from '../imgs/logo.png'
 import img22 from '../imgs/Screenshot 2023-12-09 222030.png'
 import img3 from '../imgs/template 3 zero.png'
+import { FiLink } from "react-icons/fi";
 //import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import BasicTable from '../functions/BasicTable'
 import { Link } from 'react-router-dom'
@@ -22,6 +23,8 @@ export default function Project() {
           <div className="box-carf">
             <h3>React Deepth toturial</h3>
             <p>I created a semple project through wich i show some books i use react js and html css js</p>
+            <div className="show-project">Show The Project <FiLink style={{fontSize:'25px', marginLeft:'3px'}} /> </div>
+
           </div>
         </div>
 
@@ -30,6 +33,7 @@ export default function Project() {
           <div className="box-carf">
             <h3>Create web sites</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, nam.</p>
+            <div className="show-project">Show The Project <FiLink style={{fontSize:'25px', marginLeft:'3px'}} /> </div>
           </div>
         </div>
         <div className="box-pro">
@@ -37,6 +41,8 @@ export default function Project() {
           <div className="box-carf">
             <h3>Portfolio </h3>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, soluta?</p>
+            <div className="show-project">Show The Project <FiLink style={{fontSize:'25px', marginLeft:'3px'}} /> </div>
+
           </div>
         </div>
 
@@ -45,7 +51,8 @@ export default function Project() {
           <div className="box-carf">
             <h3>Create Logo</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nesciunt?</p>
-           
+            <div className="show-project">Show The Project <FiLink style={{fontSize:'25px', marginLeft:'3px'}} /> </div>
+
           </div>
         </div>
         <div className="box-pro">
@@ -53,6 +60,8 @@ export default function Project() {
           <div className="box-carf">
             <h3>Create web sites</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, beatae?</p>
+            <div className="show-project">Show The Project <FiLink style={{fontSize:'25px', marginLeft:'3px'}} /> </div>
+
           </div>
         </div>
       </div>

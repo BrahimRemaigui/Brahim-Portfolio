@@ -28,15 +28,21 @@ export default function Skills(){
               </div>
             </div>
             <div className="skill">
-              <h3>JavaScript <span>70%</span></h3>
+              <h3>Bootstrap <span>60%</span></h3>
               <div className="the-progress">
-              <span style={{width: "70%"}}></span>
+              <span style={{width: "60%"}}></span> 
               </div>
             </div>
             <div className="skill">
-              <h3>Python <span>80%</span></h3>
+              <h3>Tailwind CSS  <span>60%</span></h3>
               <div className="the-progress">
-              <span style={{width: "80%"}}></span>
+              <span style={{width: "60%"}}></span> 
+              </div>
+            </div>
+            <div className="skill">
+              <h3>JavaScript <span>70%</span></h3>
+              <div className="the-progress">
+              <span style={{width: "70%"}}></span>
               </div>
             </div>
             <div className="skill">
@@ -45,10 +51,26 @@ export default function Skills(){
               <span style={{width: "50%"}}></span>  
               </div>
             </div>
+            
+            
             <div className="skill">
               <h3>Vue.js <span>40%</span></h3>
               <div className="the-progress">
               <span style={{width: "40%"}}></span>  
+              </div>
+            </div>
+
+            <div className="skill">
+              <h3>Jave <span>80%</span></h3>
+              <div className="the-progress">
+              <span style={{width: "80%"}}></span>
+              </div>
+            </div>
+
+            <div className="skill">
+              <h3>Python <span>80%</span></h3>
+              <div className="the-progress">
+              <span style={{width: "80%"}}></span>
               </div>
             </div>
           </div>

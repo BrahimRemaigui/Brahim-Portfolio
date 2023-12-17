@@ -15,6 +15,7 @@ export default function Navbar()
   const changefalse=()=>{
     setIsLiked(false)
   }
+  const [hr,setHr]=useState("home")
     return (
       <div className='page-conainter'>
         <div className="nav-bar">
@@ -22,11 +23,11 @@ export default function Navbar()
             <div className='muno'>
                 <ul className={`nav ${isLiked ? "menu-responsive" :"muno_normale" }`}onMouseLeave={changefalse} >
                 
-                    <Link  style={{textDecoration:'none'}} to="/"><li className='munoitem'>Home </li></Link>
-                    <Link style={{textDecoration:'none'}} to="services"><li className='munoitem'> Services </li></Link>
-                    <Link style={{textDecoration:'none'}} to="Skills"><li className='munoitem'> Skils</li></Link>
-                    <Link style={{textDecoration:'none'}} to="project"><li className='munoitem'> Projects</li></Link>
-                    <NavLink style={{textDecoration:'none'}} to="Contact" className='munoitem' activeClassName="active-class"><li > Contact</li></NavLink>
+                    <Link  style={{textDecoration:'none'}} to="/"><li onClick={()=>{setHr("home")}} className='munoitem'>Home{hr==="home"?<hr/>:<></>}  </li></Link>
+                    <Link style={{textDecoration:'none'}} to="services"><li onClick={()=>{setHr("services")}} className='munoitem'> Services {hr==="services"?<hr/>:<></>} </li></Link>
+                    <Link style={{textDecoration:'none'}} to="Skills"><li onClick={()=>{setHr("skils")}} className='munoitem'> Skils {hr==="skils"?<hr/>:<></>} </li></Link>
+                    <Link style={{textDecoration:'none'}} to="project"><li onClick={()=>{setHr("projects")}} className='munoitem'> Projects {hr==="projects"?<hr/>:<></>} </li></Link>
+                    <NavLink style={{textDecoration:'none'}} to="Contact" className='munoitem'><li  onClick={()=>{setHr("contact")}} > Contact {hr==="contact"?<hr/>:<></>} </li></NavLink>
                  </ul>
             </div>
             

@@ -75,3 +75,17 @@
     
   }
   
+  .muno_normale hr{
+    height: 2px;
+    background-color: blueviolet;
+    margin-top: 3px;
+    transition: 2s;
+
+}
+  .menu-responsive hr{
+    width: 65px;
+    height: 2px;
+    background-color: blueviolet;
+    margin-top: 3px;
+    transition: 1s;
+  }

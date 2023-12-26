@@ -1,4 +1,5 @@
 import './Home.css'
+import {motion} from 'framer-motion'
 import { FaFacebook } from "react-icons/fa";
 import { GrLinkedin } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
@@ -40,7 +41,7 @@ export default function Home() {
     return (
         <div>
         <div className="home-container">
-            <div className="space-witi">
+            <motion.div initial={{x:-500}} animate={{x:0}}  transition={{duration:0.3 }} className="space-witi">
                 <h4>Hi I'am</h4>
                 <h1><span style={{color:'blueviolet'}}>Brahim </span> Remaigui </h1>
                 <h1 style={{fontSize:'37px'}}>I'am <span style={{color:'blueviolet'}}>Freelancer Front-end </span> Developer </h1>
@@ -55,12 +56,16 @@ export default function Home() {
                     <Link style={{textDecoration:'none'}} to="Contact"><button className='dis-btn'>Contact Us</button></Link>
                 </div>
                 
-            </div>
-            <div className='space-imag'>
+            </motion.div>
+            <motion.div initial={{x:500,opacity:0}} animate={{x:0,opacity:1}}
+             transition={{delay:1, duration: 1, type:'spring' ,stiffness:120}}
+             //hover in motion 
+             whileHover={{}}
+             className='space-imag'>
                 <div className="back-img">
                     <img src={img} alt="" />
                 </div>
-            </div>
+            </motion.div>
             
         </div>
         <a href="#about"><FaAngleDoubleDown  className='Double-Down'/> </a>

@@ -5,7 +5,10 @@ import img3 from '../imgs/frent-end.jpg'
 import img4 from '../imgs/descktop-app.jpg'
 import { GrFormNextLink } from "react-icons/gr";
 import React, { Component } from "react";
+import Slider from "react-slick";
 import img5 from '../imgs/db.jpg'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 export default function Services() {
 
   const class1 = 'dis-btn';
